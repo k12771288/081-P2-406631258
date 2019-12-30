@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Demo</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 90%;
+        margin: 20px auto;
+      }
+      #heading {
+        height: 100px;
+        background-color: darkcyan;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      #menu {
+        height: 500px;
+        background-color: darkturquoise;
+      }
+
+      #section {
+        float: right;
+        width: 80%;
+        height: 500px;
+        background-color: rgb(152, 230, 230);
+      }
+
+      #section a {
+        position: relative;
+        margin: 50px;
+      }
+
+      #footer {
+        height: 70px;
+        background-color: darkgray;
+      }
+
+      #heading nav ul {
+        padding: 0px;
+      }
+
+      #heading nav li {
+        float: left;
+        list-style-type: none;
+        margin: 5px;
+        font-size: 15px;
+      }
+
+      #heading nav a {
+        padding: 5px;
+        background-color: darksalmon;
+      }
+
+      #heading nav a:hover {
+        background-color: crimson;
+      }
+    </style>
+    <script>
+      function changeColor(index) {
+        var p = document.getElementById('section');
+        switch (index) {
+          case 1:
+            p.style.backgroundColor = 'Yellow';
+            break;
+
+          case 2:
+            p.style.backgroundColor = 'azure';
+            break;
+
+          case 3:
+            p.style.backgroundColor = 'cornflowerblue';
+            break;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="heading">
+      <a>Heading</a>
+      <nav>
+        <ul>
+          <li onclick="changeColor(1)"><a href="#">Link1</a></li>
+          <li onclick="changeColor(2)"><a href="#">Link2</a></li>
+          <li onclick="changeColor(3)"><a href="#">Link3</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="section"><a>Section</a></div>
+    <div id="menu"><a>Menu</a></div>
+    <div id="footer"><a>Footer</a></div>
+  </body>
+</html>

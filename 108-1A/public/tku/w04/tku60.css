@@ -1,0 +1,41 @@
+body {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#menu {
+  float: left;
+  width: 20%;
+  height: 500px;
+  background-color: darkturquoise;
+}
+
+#section {
+  float: right;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(152, 230, 230);
+}
+
+#section a {
+  position: relative;
+  margin: 50px;
+}
+
+#menu nav ul {
+  padding: 0px;
+}
+#menu nav li {
+  list-style-type: none;
+  margin: 25px;
+  font-size: 15px;
+}
+
+#menu nav a {
+  padding: 5px;
+  background-color: darksalmon;
+}
+
+#menu nav a:hover {
+  background-color: crimson;
+}
